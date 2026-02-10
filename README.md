@@ -32,21 +32,28 @@ Example records include countries such as Afghanistan, Albania, Algeria, Austral
 
 The cleaning phase focuses on making the dataset accurate, consistent, and trustworthy for analysis.
 
-Key Cleaning Steps
+Key Cleaning Steps:
 
-Identified and handled missing values (e.g., Life Expectancy gaps)
-<img width="440" height="364" alt="08 01 2026_01 45 05_REC" src="C:\Users\vvsv2\Desktop\sql 2026\pro1_part1_pic1.png"/>
+### checking for duplicates using count and concat functions, if found we need to delete them and update it to the database:
+
+<img width="1433" height="751" alt="pro1_part1_pic1" src="https://github.com/user-attachments/assets/965c2660-8fa9-4799-858f-fe1fdcad69ed" />
 
 
-Standardized categorical fields such as Status
+### Using row_number() function to make sure all duplicate rows standout and we can **alter(delete)** them later and **update** it to the database 
 
-Removed or validated duplicate records
+<img width="1440" height="707" alt="pro1_part1_pic2" src="https://github.com/user-attachments/assets/ffc78879-4b3e-40dd-95a8-e1c6103370b1" />
 
-Corrected inconsistent numeric values
 
-Ensured proper data types for analytical queries
+### Standardizing data by checking any mispellings in columns and updating them
 
-Verified country–year continuity where applicable
+<img width="1204" height="662" alt="pro1_part1_pic3" src="https://github.com/user-attachments/assets/e733c202-fe86-466a-86ea-cb4ac7a2eb45" />
+
+
+### Corrected inconsistent data by self joining the tables and populating data using average of before and after values
+
+<img width="1204" height="662" alt="pro1_part1_pic4" src="https://github.com/user-attachments/assets/95054b3b-95fa-4a7a-adfa-e57433489ec4" />
+
+ 
 
 Each step is documented with clear SQL comments explaining the intent and logic, following best practices used in real analytics workflows.
 
@@ -54,27 +61,42 @@ Each step is documented with clear SQL comments explaining the intent and logic,
 
 Once the data was cleaned, analytical queries were written to explore patterns and trends.
 
-Key Questions Explored
+##Key Questions Explored
 
-How does life expectancy vary between developed and developing countries?
+### how each country has done in past with their life expectancy? also filter out zeros if you find them.
 
-What is the relationship between GDP and life expectancy?
+<img width="1022" height="736" alt="pro1_part2_pic1" src="https://github.com/user-attachments/assets/5adfe79c-d40c-4d7b-8135-fd343ccceb17" />
 
-How do adult mortality and infant deaths impact life expectancy?
 
-How has life expectancy changed over time for different countries?
+### analyze which year has the best and worst life expectancy?
 
-Which countries show consistent improvement or decline?
+<img width="789" height="719" alt="pro1_part2_pic2" src="https://github.com/user-attachments/assets/a0e18bc3-6e0b-4d84-a65a-aa091db4ec3a" />
 
-Advanced SQL concepts were applied, including:
 
-GROUP BY and aggregate functions
+### how GDP effecting life expectancy / correlationship between GDP and life expectancy ?
 
-Conditional logic
+<img width="936" height="709" alt="pro1_part2_pic3" src="https://github.com/user-attachments/assets/558831d3-92ee-4d0e-af7b-6e5e1c91b547" />
 
-Trend analysis over time
 
-Country-level and global comparisons
+### how life expectancy changes when GDP is high and GDP is low?
+
+<img width="867" height="528" alt="pro1_part2_pic4" src="https://github.com/user-attachments/assets/ce104b0c-ffc5-4282-b0f8-d10e409d7627" />
+
+
+### life expectancy correlationship with developed or developing country
+
+<img width="932" height="509" alt="pro1_part2_pic5" src="https://github.com/user-attachments/assets/33f5bef3-7664-4d83-bf30-c0b3cd6b4371" />
+
+
+### how bmi effects life expectancy?
+
+<img width="876" height="669" alt="pro1_part2_pic6" src="https://github.com/user-attachments/assets/45e3c25b-fb60-43d7-9640-c1521341840f" />
+
+
+### adult mortality correlation with life expectancy using rolling_total
+
+<img width="773" height="690" alt="pro1_part2_pic7" src="https://github.com/user-attachments/assets/27dc8409-fc37-4ffd-9c82-0c7d3cc097d1" />
+
 
 ## 🛠 Tools & Skills Used
 
