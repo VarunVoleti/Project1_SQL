@@ -4,7 +4,7 @@
 This project focuses on cleaning and analyzing global life expectancy data using MySQL.
 The dataset contains health, economic, and demographic indicators across countries and years, with several real-world data quality issues such as missing values, inconsistencies, and duplicates.
 
-The goal of this project is twofold:
+The goal of this project is to:
 
 Prepare a reliable, analysis-ready dataset through structured SQL data cleaning.
 
@@ -16,15 +16,15 @@ All logic is clearly documented using in-line SQL comments, making the project e
 
 The dataset includes country-level data across multiple years with the following key attributes:
 
-Demographics: Country, Year, Status (Developed / Developing)
+**Demographics:** Country, Year, Status (Developed / Developing)
 
-Health Indicators: Life Expectancy, Adult Mortality, Infant Deaths, HIV/AIDS, BMI
+**Health Indicators:** Life Expectancy, Adult Mortality, Infant Deaths, HIV/AIDS, BMI
 
-Immunization: Polio, Diphtheria
+**Immunization:** Polio, Diphtheria
 
-Economic Factors: GDP, Percentage Expenditure
+**Economic Factors:** GDP, Percentage Expenditure
 
-Education & Nutrition: Schooling, Thinness (1–19 & 5–9 years)
+**Education & Nutrition:** Schooling, Thinness (1–19 & 5–9 years)
 
 Example records include countries such as Afghanistan, Albania, Algeria, Australia, Argentina, and many more, spanning multiple years.
 
@@ -32,7 +32,7 @@ Example records include countries such as Afghanistan, Albania, Algeria, Austral
 
 The cleaning phase focuses on making the dataset accurate, consistent, and trustworthy for analysis.
 
-Key Cleaning Steps:
+ ## Key Cleaning Steps:
 
 ### checking for duplicates using count and concat functions, if found we need to delete them and update it to the database:
 
@@ -59,11 +59,11 @@ Each step is documented with clear SQL comments explaining the intent and logic,
 
 # 📊 Part 2: Data Analysis (SQL)
 
-Once the data was cleaned, analytical queries were written to explore patterns and trends.
+**Once the data was cleaned, analytical queries were written to explore patterns and trends.**
 
 ## Key Questions Explored
 
-### how each country has done in past with their life expectancy? also filter out zeros if you find them.
+### how each country has done in past with their life expectancy? also filter out zeros if you find them?
 
 <img width="1022" height="736" alt="pro1_part2_pic1" src="https://github.com/user-attachments/assets/5adfe79c-d40c-4d7b-8135-fd343ccceb17" />
 
@@ -100,19 +100,17 @@ Once the data was cleaned, analytical queries were written to explore patterns a
 
 ## 🛠 Tools & Skills Used
 
-Database: MySQL
+**Database:** MySQL
 
-Core SQL Skills:
+**Core SQL Skills:** Data Cleaning & Validation
 
-Data Cleaning & Validation
+**Aggregations** (AVG, SUM, MIN, MAX)
 
-Aggregations (AVG, SUM, MIN, MAX)
+**Filtering** (WHERE, HAVING)
 
-Filtering (WHERE, HAVING)
+**Joins & subqueries**
 
-Joins & subqueries
-
-Analytical reasoning with real-world data
+**Analytical reasoning with real-world data**
 
 ## 🎯 Key Takeaways
 
