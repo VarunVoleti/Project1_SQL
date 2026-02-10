@@ -135,3 +135,7 @@ Translating raw data into insights
 Writing clean, readable, and well-commented queries
 
 It serves as a foundational portfolio project demonstrating practical SQL proficiency.
+
+## Author
+
+## Varun Voleti – Data Analyst | SQL Enthusiast
