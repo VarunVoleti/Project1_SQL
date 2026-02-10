@@ -36,6 +36,9 @@ Key Cleaning Steps
 
 Identified and handled missing values (e.g., Life Expectancy gaps)
 
+![Data Cleaning Output – World Life Expectancy](images/pro1_part1_pic1.png)
+
+
 Standardized categorical fields such as Status
 
 Removed or validated duplicate records
