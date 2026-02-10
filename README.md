@@ -61,7 +61,7 @@ Each step is documented with clear SQL comments explaining the intent and logic,
 
 Once the data was cleaned, analytical queries were written to explore patterns and trends.
 
-##Key Questions Explored
+## Key Questions Explored
 
 ### how each country has done in past with their life expectancy? also filter out zeros if you find them.
 
