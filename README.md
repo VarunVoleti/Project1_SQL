@@ -74,7 +74,7 @@ Trend analysis over time
 
 Country-level and global comparisons
 
-# 🛠 Tools & Skills Used
+## 🛠 Tools & Skills Used
 
 Database: MySQL
 
@@ -90,7 +90,7 @@ Joins & subqueries
 
 Analytical reasoning with real-world data
 
-# 🎯 Key Takeaways
+## 🎯 Key Takeaways
 
 Data cleaning is critical before any meaningful analysis.
 
@@ -100,7 +100,7 @@ Health and economic indicators show strong correlations with life expectancy.
 
 Clear documentation makes analytical work easier to review and reuse.
 
-# 🚀 Why This Project Matters
+## 🚀 Why This Project Matters
 
 This project reflects real-world data analyst responsibilities, including:
 
